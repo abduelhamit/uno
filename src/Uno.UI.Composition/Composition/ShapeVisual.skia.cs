@@ -4,7 +4,7 @@ using SkiaSharp;
 using Uno.Extensions;
 using Uno.UI.Composition;
 
-namespace Microsoft.UI.Composition;
+namespace Windows.UI.Composition;
 
 public partial class ShapeVisual
 {

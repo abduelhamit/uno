@@ -16,20 +16,20 @@ using AppKit;
 #else
 using Uno.UI;
 #endif
-using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
 using static Private.Infrastructure.TestServices;
 using Windows.Foundation;
 using Windows.UI;
-using Microsoft.UI.Xaml.Media;
+using Windows.UI.Xaml.Media;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Uno.Extensions;
 using Uno.UI.RuntimeTests.Helpers;
 using System.ComponentModel;
 using Windows.UI.Input.Preview.Injection;
-using Microsoft.UI.Xaml.Data;
+using Windows.UI.Xaml.Data;
 using MUXControlsTestApp.Utilities;
 using Uno.UI.RuntimeTests.Tests.Windows_UI_Xaml_Controls;
 
@@ -375,7 +375,7 @@ namespace Uno.UI.RuntimeTests.Tests.Microsoft_UI_Xaml_Controls
 	{
 		public static bool DraggingThrewException { get; set; }
 
-		protected override void OnDragEnter(Microsoft.UI.Xaml.DragEventArgs args)
+		protected override void OnDragEnter(Windows.UI.Xaml.DragEventArgs args)
 		{
 			try
 			{
@@ -387,7 +387,7 @@ namespace Uno.UI.RuntimeTests.Tests.Microsoft_UI_Xaml_Controls
 			}
 		}
 
-		protected override void OnDragOver(Microsoft.UI.Xaml.DragEventArgs args)
+		protected override void OnDragOver(Windows.UI.Xaml.DragEventArgs args)
 		{
 			try
 			{
